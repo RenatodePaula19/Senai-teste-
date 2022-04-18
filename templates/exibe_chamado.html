@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamados Abertos</title>
+</head>
+<body onload="habilita_botao">
+    <h1>Lista de Chamados Abertos</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Data</td>
+                <td>Setor</td>
+                <td>Local</td>
+                <td>Comentario</td>
+                <td>Status</td>
+                <td>Atender</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for chamado in lista  %}
+            <tr>
+                <td>{{ chamado[1] }}</td>
+                <td>{{ chamado[2] }}</td>
+                <td>{{ chamado[3]  }}</td>
+                <td>{{ chamado[4] }}</td>
+                <td>{{ chamado[5] }}</td>
+
+                <td>{% if chamado[6] == 1  %}
+                         {{ 'Aberto' }}
+                    {% else %}
+                         {{ 'Fechado' }}
+                    {% endif %}  
+                </td>
+
+                <td>
+                    <form method="post" action="concluir_chamado">
+                        <input type="text" value="{{ chamado[0]}}" name="id_chamado" hidden >
+                        <input type="submit" value="Concluir"  class="botao">
+                    </form>  
+                </td>
+
+            </tr>
+            {%  endfor %}
+        </tbody>
+    </table>
+    <script src="/static/js.js"></script>
+</body>
+</html>
