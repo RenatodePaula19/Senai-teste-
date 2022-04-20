@@ -3,7 +3,9 @@ SENAI TESTE IMAGEM
 
 
 Casso de uso: Gerar excel com tabela fipe dos veículos: usuário pesquisa veículo e sistemas . Após a pesquisa, o execel gera uma tabela contendo todos as marcas e preços . 
-Consultar fipe : Consultar preço, marca e modelo . 
+
+Consultar fipe : Consultar preço, marca e modelo.
+
 Enviar tabela por e-mail: Um campo de pesquisa para selecionar o veículo.
 Se caso não funcionar , o programa enserra. 
 
