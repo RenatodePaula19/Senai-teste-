@@ -6,6 +6,6 @@ Casso de uso: Gerar excel com tabela fipe dos veículos: usuário pesquisa veíc
 
 Consultar fipe :Logo depois de apertar o botão de cosulta o programa busca as informaçoes na  api  (preço, marca, modelo.)
 
-Enviar tabela por e-mail: Após terminar a pesquisa o programa automaticamente envia um email com a tabela excel 
+Enviar tabela por e-mail: Após terminar a pesquisa o programa automaticamente envia um email com a tabela excel. 
  
 
